@@ -14,6 +14,9 @@ constructor(titulo: string, autor: string, editora: string, genero: string, data
     this.dataPublicacao = dataPublicacao
     this.quantidadeCopia = quantidadeCopia
     }
+mostrarCadastroLivro(){
+    console.log(`Título`)
+    }
 }
 
 //Classe cadastro Usuários
@@ -40,21 +43,24 @@ constructor(infoL: Livro, infoU: User, dataEmprestimo: Date){
     this.informacaoUser = infoU
     this.dataEmprestimo = dataEmprestimo
     }
-mostrarDados(){
+mostrarEmprestimoLivro(){
 
     }
 }
 
 var Emprestimo1;
 
-/*Classe Devolução do Livro
+//Classe Devolução do Livro
 class Devolução{
     livroDevolvido: Livro
     informacaoUser: User
-    dataEmprestimo: Date
-constructor(){
+    dataDevolucao: Date
+constructor(LivroD: Livro, InfoUser: User, dataDevolucao: Date){
+    this.livroDevolvido = LivroD
+    this.informacaoUser = InfoUser
+    this.dataDevolucao = dataDevolucao
+    }
+mostrarDevolucaoLivro(){
 
+    }   
 }
-    
-}
-*/

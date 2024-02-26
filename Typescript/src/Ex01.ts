@@ -1,6 +1,6 @@
 
-//Classe Ser humano
-class Serhumaninho{
+//Classe modelo Ser humano
+abstract class Serhumaninho{
     nome: string
     cpf: string
     telefone: string
@@ -18,7 +18,6 @@ constructor(nome: string, cpf: string, telefone: string, dataNascimento: Date, e
     this.genero = genero
     }
 mostrarDados(){
-    console.log('-------------Dados do Ser Humaninho-------------')
     console.log(`Nome: ${this.nome}`)
     console.log(`CPF: ${this.cpf}`)
     console.log(`Telefone: ${this.telefone}`)
@@ -33,22 +32,23 @@ mostrarDados(){
         }
     }
 }
-    var SerHumaninho = new Serhumaninho('Alexa', '021.628.095-37', '(84) 91234-5678', new Date('1998-6-8'),'rua irineu nº666 conjunto santarém','Alexa@gmail.com')
+/*   
+var SerHumaninho = new Serhumaninho('Alexa', '021.628.095-37', '(84) 91234-5678', new Date('1998-6-8'),'rua irineu, nº666, conjunto santarém','Alexa@gmail.com')
     console.log(SerHumaninho.mostrarDados())
     console.log('')
     console.log('')
-/*
-//Classe cadastro Funcionários puxando as atributos de SerHumaninho
-class Funcionario extends Serhumaninho{
+*/
+//Classe modelo cadastro Funcionários puxando as atributos de SerHumaninho
+export abstract class Funcionario extends Serhumaninho{
     cargo: string
     especialidade: string
-    dataDeAdmissao: Date
-constructor(nome: string, endereco: string, dataNascimento: Date,email: string, cpf: string, telefone: string, cargo: string, especialidade: string,dataDeAdmissao: Date, genero: string){
-    //puxando o constructor de pessoa
+    dataAdmissao: Date
+constructor(nome: string, endereco: string, dataNascimento: Date,email: string, cpf: string, telefone: string, cargo: string, especialidade: string,dataAdmissao: Date, genero: string){
+    //puxando o constructor de Ser Humaninho
     super(nome, cpf, telefone, dataNascimento, endereco, email, genero)
     this.cargo = cargo
     this.especialidade = especialidade
-    this.dataDeAdmissao = dataDeAdmissao
+    this.dataAdmissao = dataAdmissao
 }   
 mostrarDados(){
     console.log('------------Dados do funcionário------------')
@@ -56,16 +56,17 @@ mostrarDados(){
     super.mostrarDados()
     console.log(`Cargo: ${this.cargo}`)
     console.log(`Especialidade: ${this.especialidade}`)
-    console.log(`Admissão: ${this.dataDeAdmissao.toLocaleDateString('pt-BR')}`)
-    console.log('---------------------------------------------')
+    console.log(`Admissão: ${this.dataAdmissao.toLocaleDateString('pt-BR')}`)
+    
     }
 }
+/*
     var funcionario1 = new Funcionario('Xaulin', 'rua da desgraça nº 240 conjunto: santarém', new Date('1997-3-23'), 'Xaulin@gmail.com', '012.234.765-08', '(84) 91234-1234', 'Médico', 'Psiquiátra', new Date('1997-4-24'), 'Macho-Alfa')
     console.log(funcionario1.mostrarDados())
     console.log('')
     console.log('')
 */
-
+/*
 //Classe cadastro de Consultas
 class Consultas{
     especialidadeConsulta: string
@@ -90,18 +91,7 @@ dadosConsulta(){
     console.log(consulta1.dadosConsulta())
 
 //Classe cadastro Pacientes:
-class Paciente extends Serhumaninho{
-    consulta: Consultas
-    constructor(nome: string, email: string, info: Consultas, telefone: string, endereco: string, cpf: string, dataNascimento: Date, genero?: string){
-        super(nome, cpf, telefone, dataNascimento, endereco, email, genero)
-        this.consulta = info
-    }
-DadosPaciente(){
-    console.log('------------Paciente------------')
-    super.mostrarDados()
-    console.log('------------Dados da Consulta------------')
-    
-    }
-}
+class Paciente{
 
-var paciente1 = new Paciente('fulando2','fulando2@gmail.com', consulta1,'(84) 90034-5008', 'Rua da misericóridia nº000 conjunto Santarém','021.324.096-38', new Date('1969-1-1'))
+}
+*/
