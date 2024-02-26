@@ -56,13 +56,16 @@ dadosFront(){
     console.log(`Linguagem: ${this.linguagemFE}`)
     console.log(`Framework's: ${this.frameworksFE}`)
 
-   if(this.ui){
-    console.log(`Ferramenta UI: ${this.ferramentasUi}`)
+    if(this.ui){
+        console.log(`Ferramenta UI: ${this.ferramentasUi}`)
+    }else{
+    console.log('incompetente!!! sabe de nada')
         }
     if(this.ux){
-    console.log(`Ferramentas UX: ${this.ferramentasUx}`)
+        console.log(`Ferramentas UX: ${this.ferramentasUx}`)
+    }else{
+    console.log('incompetente!!! sabe de nada')
         }
-    
     }
 }
 var frontEnd1 = new FrontEnd ("João Silva", "Rua das Flores, 123", new Date("1990-05-15"), "joao.silva@example.com", "123.456.789-00", "(00) 1234-5678","Desenvolvedor Frontend", "UI/UX Design", new Date ("2018-03-10"), "6 anos", ["HTML", "CSS", "JavaScript", "React.js", "Adobe XD"], "Masculino", true, true, ["Adobe XD", "Sketch", "Figma"], ["Adobe XD", "Sketch", "Figma"], ["HTML", "CSS", "JavaScript"], ["React.js", "Vue.js"]) 
@@ -80,7 +83,7 @@ constructor(nome: string, endereco: string, dataNascimento: Date, email: string,
     }
 dadosBack(){
 
-}
+    }
 }
 
 class FullStack extends Desenvolvedor{
