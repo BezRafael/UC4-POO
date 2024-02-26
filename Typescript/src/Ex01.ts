@@ -60,12 +60,12 @@ mostrarDados(){
     
     }
 }
-/*
-    var funcionario1 = new Funcionario('Xaulin', 'rua da desgraça nº 240 conjunto: santarém', new Date('1997-3-23'), 'Xaulin@gmail.com', '012.234.765-08', '(84) 91234-1234', 'Médico', 'Psiquiátra', new Date('1997-4-24'), 'Macho-Alfa')
-    console.log(funcionario1.mostrarDados())
+
+    //var funcionario1 = new Funcionario('Xaulin', 'rua da desgraça nº 240 conjunto: santarém', new Date('1997-3-23'), 'Xaulin@gmail.com', '012.234.765-08', '(84) 91234-1234', 'Médico', 'Psiquiátra', new Date('1997-4-24'), 'Macho-Alfa')
+    //console.log(funcionario1.mostrarDados())
     console.log('')
     console.log('')
-*/
+
 /*
 //Classe cadastro de Consultas
 class Consultas{

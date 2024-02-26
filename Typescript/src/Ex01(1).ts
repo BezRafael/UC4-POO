@@ -51,8 +51,8 @@ constructor(nome: string, endereco: string, dataNascimento: Date, email: string,
     this.frameworksFE = frameworksFE
     }
 dadosFront(){
-    super.dadosDev
 
+    super.dadosDev()
     console.log(`Linguagem: ${this.linguagemFE}`)
     console.log(`Framework's: ${this.frameworksFE}`)
 
@@ -65,7 +65,7 @@ dadosFront(){
     
     }
 }
-var frontEnd1 = new FrontEnd("João Silva", "Rua das Flores, 123", new Date("1990-05-15"), "joao.silva@example.com", "123.456.789-00", "(00) 1234-5678","Desenvolvedor Frontend", "UI/UX Design", new Date ("2018-03-10"), "6 anos", ["HTML", "CSS", "JavaScript", "React.js", "Adobe XD"], "Masculino", true, true, ["Adobe XD", "Sketch", "Figma"], ["Adobe XD", "Sketch", "Figma"], ["HTML", "CSS", "JavaScript"], ["React.js", "Vue.js"]) 
+var frontEnd1 = new FrontEnd ("João Silva", "Rua das Flores, 123", new Date("1990-05-15"), "joao.silva@example.com", "123.456.789-00", "(00) 1234-5678","Desenvolvedor Frontend", "UI/UX Design", new Date ("2018-03-10"), "6 anos", ["HTML", "CSS", "JavaScript", "React.js", "Adobe XD"], "Masculino", true, true, ["Adobe XD", "Sketch", "Figma"], ["Adobe XD", "Sketch", "Figma"], ["HTML", "CSS", "JavaScript"], ["React.js", "Vue.js"]) 
 frontEnd1.dadosFront()
 
 class BackEnd extends Desenvolvedor{
