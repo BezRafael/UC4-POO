@@ -1,4 +1,5 @@
-//Criando uma classe
+"use strict";
+/* //Criando uma classe
 class Pessoa{
     nomeDeUser: string;
     idade: number;
@@ -17,4 +18,4 @@ console.log(pessoa2)
 console.log('')
 console.log(pessoa2.nomeDeUser)
 console.log(pessoa2.idade)
-console.log(pessoa2.genero)
+console.log(pessoa2.genero) */ 

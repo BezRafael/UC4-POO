@@ -1,4 +1,5 @@
-//Classe cadastro de Livros
+"use strict";
+/* //Classe cadastro de Livros
 class Livro{
     titulo: string
     autor: string
@@ -62,5 +63,6 @@ constructor(LivroD: Livro, InfoUser: User, dataDevolucao: Date){
     }
 mostrarDevolucaoLivro(){
 
-    }   
+    }
 }
+ */ 

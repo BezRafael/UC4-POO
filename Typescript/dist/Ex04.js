@@ -1,9 +1,11 @@
-//Classe Equipe
+"use strict";
+/* //Classe Equipe
+
 class Equipe{
     nome: string
     numeroFuncionarios: number
     InfoFuncionarios:
-    lider: 
+    //lider
 constructor(nome: string, numeroFuncionarios: number){
     this.
 }
@@ -20,6 +22,6 @@ constructor(nome: string, descricao: string, dataInicio: Date, dataConclusao: Da
     this.nome = nome
     this.descricao = descricao
     this.dataInicio = dataInicio
-    this.dataConclusao = dataConclusao    
-}
-}
+    this.dataConclusao = dataConclusao
+    }
+} */ 

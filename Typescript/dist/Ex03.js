@@ -1,4 +1,5 @@
-//Classe cadrastro de Usuário
+"use strict";
+/* //Classe cadrastro de Usuário
 class Cliente{
     nomeUsuario: string
     dataNascimento: Date
@@ -61,3 +62,4 @@ constructor(InfoC3: Cliente, saldo: number, tipoConta: string, infoReceita: Rece
     this.Despesas = infoDespesas
     }
 }
+ */ 

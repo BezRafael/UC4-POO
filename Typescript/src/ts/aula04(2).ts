@@ -1,4 +1,4 @@
-class Carro{
+/* class Carro{
     modelo: string;
     ano: number;
     marca: string;
@@ -16,4 +16,4 @@ constructor(modelo: string, ano: number, marca: string, preço: number, motor: n
 }
 
 const meuCarro = new Carro('RAM Longhorn', 2024, 'Dodge', 500000, 4.1, "preto")
-console.log(meuCarro)
+console.log(meuCarro) */
